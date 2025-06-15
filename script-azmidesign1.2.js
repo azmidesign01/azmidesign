@@ -683,13 +683,9 @@ function setupdaftarMember(user, element, status) {
    var linkproduk = globalSetting['Link Produk Member'];
    var html = `
     <p><b>Gabung Jadi Member Sekarang</b></p>
-<p>
-  Yuk gabung jadi member di kami hanya 
-  <span class="box-price-abu">${price}</span> 
-  atau membeli produk 
-  <a href='${linkproduk}' target='_blank'><b>${produk}</b></a> 
-  untuk dapatkan akses download file sepuasnya
-</p>
+
+<p>Yuk gabung jadi member di kami hanya <span class="box-price-abu">${price}</span> atau membeli produk <a href='${linkproduk}' target='_blank'><b>${produk}</b></a> untuk dapatkan akses download file sepuasnya</p>
+
 
 
     <form class='form-daftar-member box-form'>
