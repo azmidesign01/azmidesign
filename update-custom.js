@@ -6059,9 +6059,7 @@ simpleCart({
     return;
   }
 });
-function generator(_0x374690) {
- return true; // Selalu return true
-}
+
 $(document).ready(function () {
   $(document).on("change", "#upload", function () {
     var _0x62b21b = $("#upload").prop("files")[0x0];
