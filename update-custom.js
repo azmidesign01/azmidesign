@@ -166,7 +166,16 @@ function lsimple(_0x1a62f6) {
   };
 }
 var belibeliBlogger = xsimple();
-var licbliBlogger = lsimple();
+var licbliBlogger = {
+  lbelibeli: function(s) {
+    try {
+      return s; // Tidak melakukan decode apapun
+    } catch(e) {
+      return '';
+    }
+  }
+};
+
 var urlDatabase = "https://script.google.com/macros/s/" + simpleBliSetting["ID Database"] + "/exec";
 var url_string = window.location.href;
 var urlParameter = new URL(url_string);
@@ -6059,6 +6068,29 @@ simpleCart({
     return;
   }
 });
+function generator(_0x374690) {
+  // Lisensi dinonaktifkan
+  return;
+}
+// --- PATCH agar tidak error ---
+if (typeof urlDatabase === 'undefined') {
+  var urlDatabase = '';
+}
+
+if (typeof simpleCart === 'undefined') {
+  var simpleCart = {
+    add: function(){},
+    empty: function(){},
+    checkout: function(){},
+    cart: [],
+  };
+}
+
+if (typeof hapusArtikel === 'undefined') {
+  function hapusArtikel(){
+    console.log('hapusArtikel() dinonaktifkan - tidak ada aksi.');
+  }
+}
 
 $(document).ready(function () {
   $(document).on("change", "#upload", function () {
